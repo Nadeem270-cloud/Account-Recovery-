@@ -1,0 +1,37 @@
+.auth-shell { min-height: 100svh; display: grid; grid-template-columns: 0.9fr 1.1fr; background: var(--paper); }
+.welcome-panel { padding: clamp(32px, 7vw, 110px); display: flex; flex-direction: column; justify-content: space-between; color: var(--cream); background: var(--ink); }
+.welcome-panel h1 { max-width: 500px; color: var(--cream); font-size: clamp(48px, 7vw, 88px); line-height: .96; margin: auto 0 20px; }
+.welcome-copy { max-width: 340px; color: #c4c8c2; font-size: 18px; }
+.signin-panel { display: grid; place-items: center; padding: 32px; }
+.panel-content, .reset-card { width: min(100%, 420px); }
+.eyebrow { color: var(--coral); font-size: 12px; font-weight: 700; letter-spacing: 0; text-transform: uppercase; margin: 0 0 18px; }
+.brand-mark { width: 42px; height: 42px; display: grid; place-items: center; border-radius: 50%; color: var(--cream); background: var(--coral); font-family: Georgia, serif; font-size: 24px; font-weight: bold; }
+.signin-panel .brand-mark { margin-bottom: 56px; }
+h1, h2 { color: var(--ink); font-family: Georgia, 'Times New Roman', serif; font-weight: 400; }
+.signin-panel h2 { font-size: 46px; line-height: 1; margin: 0 0 14px; }
+.muted { color: var(--muted); font-size: 15px; }
+.signin-form, .reset-form { display: grid; gap: 10px; margin-top: 34px; }
+label { color: var(--ink); font-size: 13px; font-weight: 700; }
+input { width: 100%; box-sizing: border-box; padding: 15px 16px; border: 1px solid var(--line); border-radius: 2px; color: var(--ink); background: #fffdf9; font: inherit; font-size: 15px; outline: none; transition: border-color .2s, box-shadow .2s; }
+input:focus { border-color: var(--coral); box-shadow: 0 0 0 3px rgba(201, 94, 72, .13); }
+.primary-button { display: flex; align-items: center; justify-content: space-between; width: 100%; margin-top: 14px; padding: 16px 18px; border: 0; border-radius: 2px; color: var(--cream); background: var(--coral); cursor: pointer; font: inherit; font-weight: 700; transition: background .2s, transform .2s; }
+.primary-button:hover { background: #ae4d3b; transform: translateY(-1px); }
+.text-link, .back-link { color: var(--coral); font-size: 14px; font-weight: 700; text-decoration: none; }
+.text-link { display: inline-block; margin-top: 26px; }
+.reset-shell { min-height: 100svh; box-sizing: border-box; padding: 34px 7vw; display: flex; flex-direction: column; background: var(--paper); }
+.back-link { color: var(--muted); }
+.back-link:hover, .text-link:hover { color: var(--coral); text-decoration: underline; }
+.reset-card { margin: auto; padding: 52px 56px; border: 1px solid var(--line); background: #fffdf9; box-shadow: 0 18px 60px rgba(38, 45, 39, .08); }
+.reset-card h1 { font-size: clamp(42px, 5vw, 64px); line-height: .98; margin: 0 0 20px; }
+.reset-card .brand-mark { margin-bottom: 34px; }
+.intro { line-height: 1.65; }
+.form-message { margin: 10px 0 0; font-size: 13px; }
+.error { color: #b23e38; }
+.fine-print { color: #8a8e87; font-size: 12px; line-height: 1.5; margin: 24px 0 0; }
+.success-state h2 { font-size: 32px; margin: 20px 0 10px; }
+.success-icon { width: 44px; height: 44px; display: grid; place-items: center; border-radius: 50%; color: var(--cream); background: var(--sage); font-size: 12px; font-weight: 700; }
+.password-output { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-top: 28px; padding: 16px; border: 1px dashed var(--sage); color: var(--ink); background: #f0f3e9; font-family: 'Courier New', monospace; font-size: 20px; letter-spacing: 0; overflow-wrap: anywhere; }
+.copy-button { flex: 0 0 auto; border: 0; color: var(--sage); background: transparent; cursor: pointer; font-size: 14px; font-weight: 700; }
+.security-note { color: var(--muted); text-align: center; font-size: 12px; }
+.security-note span { color: var(--coral); margin-right: 6px; }
+@media (max-width: 700px) { .auth-shell { display: block; } .welcome-panel { min-height: 210px; box-sizing: border-box; padding: 28px 24px; } .welcome-panel h1 { margin: 48px 0 12px; font-size: 52px; } .welcome-copy { font-size: 15px; } .signin-panel { padding: 52px 24px; } .signin-panel .brand-mark { display: none; } .reset-shell { padding: 24px 20px; } .reset-card { margin: 48px 0 32px; padding: 34px 24px; } }
